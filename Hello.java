@@ -1,6 +1,17 @@
 // jshell on terminal
 
 class Hello {
+
+    // Every variable need a variable and type.
+    // We can't change type of a variable.
+    // Type conversion and casting - lower range can assigned to bigger range. e.g. short value assigned to long . long = short, implicit conversion
+    // casting explicit conversion byte = (byte) int;
+    //// float f = 5.6f
+    /// int x = (int) f;
+    /// here we loose floating point values in variable x.
+    /// 
+
+
     public static void main(String a[]) {
         System.out.print("Hello World!");
         System.out.print(3 + 5);
@@ -28,12 +39,34 @@ class Hello {
         float f = 5.8f;
         double d = 5.8;
         
-        char c = 'k';
+        char c = 'k'; // literals
 
         boolean b = true;
         
+        // literals
 
+        int num4 = 0b101; // binary 
+        System.out.println("Num4: " + num4);
 
+        int num5 = 0x7E; // Hexadecimal
+        System.out.println("Num5: " + num5);
+
+        int num6 = 100_000_000;
+        System.out.println(num6);
+
+        double num7 = 56; //integer number 56 will get converted to double automatically.
+        System.out.print(num7);
+
+        double num8 = 12e10;
+        System.out.println(num8);
+
+        // boolean num9 = 1; // This line gives error -incompatible types: int cannot be converted to boolean.
+        // System.out.println(num9);
+
+        char c1 = 'a';
+        System.out.println(c1);
+        c1++;
+        System.out.println(c1);
     }
 }
 

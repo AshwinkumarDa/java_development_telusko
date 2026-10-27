@@ -1,0 +1,6 @@
+# java_development_telusko
+JDK
+JVM
+Byte code
+
+JDK <-- JRE <-- JVM and other libraries. <-- stack memory, heap, 
