@@ -121,6 +121,6 @@ public class CollectionInterfaceDemo {
         /// HashTable both wroks same like HashMap.
         /// HashTable is synchronized. Thread safe.
         /// HashMap is not synchronized. Not thread safe.
-        /// 
+
     }
 }
