@@ -2,7 +2,7 @@
 /// 1. @Override annotation tells compiler that we are overriding this method, if any typo mistake happens then compiler gives error.
 ///  In Hibernate, Spring framework, we use most annotations at method level, class level etc.
 /// 2. @Depricated - used at class level, 
-/// 3. 
+/// 3. For more annotations see file JavaAnnotations.java
 /**
  * 
  * Bird
