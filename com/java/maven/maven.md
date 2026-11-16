@@ -1,7 +1,6 @@
 ## Maven
 ### Maven is build tool and management tool, dependency manager
-### Manages dependencies and automates the build process
-
+### Manages dependencies and aum
 ### Maven is a free and open-source build automation tool developed by the Apache Software Foundation.
 ### It is primarly sued to 
 ### Automate the build process of java projects including tasks such as compiling code managing dependencies, packaging, testing, and dployment.
@@ -10,7 +9,7 @@
 #### Create th standard project structure
 #### Download and manage required dependencies/libraries automatically
 #### Execute unit test cases using testing frameworks like JUnit.
-#### Compile thtee project's source code
+#### Compile thtee project's sourc]';e code
 #### Package the project in to deployable formats such as JAR or WAR
 ##### Create instance of EC2 on AWS
 

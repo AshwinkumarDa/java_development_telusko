@@ -1,0 +1,153 @@
+
+
+ashwinkumard@ashwinkumards-Mac-mini gradle % gradle -v  
+
+------------------------------------------------------------
+Gradle 9.9.1
+------------------------------------------------------------
+
+Build time:    2026-11-10 16:22:15 UTC
+Revision:      47a96e4ed1822d6aa7fa32bed4461208e69077a6
+
+Kotlin:        2.4.21
+Groovy:        4.0.33
+Ant:           Apache Ant(TM) version 1.10.17 compiled on April 6 2026
+Launcher JVM:  25.0.5 (Eclipse Adoptium 25.0.5+8-LTS)
+Daemon JVM:    /Library/Java/JavaVirtualMachines/temurin-25.jdk/Contents/Home (no Daemon JVM specified, using current Java home)
+OS:            Mac OS X 15.8.3 x86_64
+
+ashwinkumard@ashwinkumards-Mac-mini gradle % gradle init
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+Select type of build to generate:
+  1: Application
+  2: Library
+  3: Gradle plugin
+  4: Basic (build structure only)
+Enter selection (default: Application) [1..4] 1
+
+Select implementation language:
+  1: Java
+  2: Kotlin
+  3: Groovy
+  4: Scala
+  5: C++
+  6: Swift
+Enter selection (default: Java) [1..6] 1
+
+Enter target Java version (min: 7, default: 21): 21
+
+Project name (default: gradle): Gradle-SampleApp
+
+Select application structure:
+  1: Single application project
+  2: Application and library project
+Enter selection (default: Single application project) [1..2] 1
+
+Select build script DSL:
+  1: Kotlin
+  2: Groovy
+Enter selection (default: Kotlin) [1..2] 2
+
+Select test framework:
+  1: JUnit 4
+  2: TestNG
+  3: Spock
+  4: JUnit Jupiter
+Enter selection (default: JUnit Jupiter) [1..4] 4
+
+Generate build using new APIs and behavior (some features may change in the next minor release)? (default: no) [yes, no] no
+
+
+> Task :init
+Learn more about Gradle by exploring our Samples at https://docs.gradle.org/9.9.1/samples/sample_building_java_applications.html
+
+BUILD SUCCESSFUL in 2m 56s
+1 actionable task: 1 executed
+ashwinkumard@ashwinkumards-Mac-mini gradle % 
+ashwinkumard@ashwinkumards-Mac-mini gradle % 
+ashwinkumard@ashwinkumards-Mac-mini gradle % cd Gradle-SampleApp 
+ashwinkumard@ashwinkumards-Mac-mini Gradle-SampleApp % ls
+app			gradle.properties	gradlew.bat
+gradle			gradlew			settings.gradle
+ashwinkumard@ashwinkumards-Mac-mini Gradle-SampleApp % gradle tasks
+Calculating task graph as no cached configuration is available for tasks: tasks
+
+> Task :tasks
+
+------------------------------------------------------------
+Tasks runnable from root project 'Gradle-SampleApp'
+------------------------------------------------------------
+
+Application tasks
+-----------------
+run - Runs this project as a JVM application
+
+Build tasks
+-----------
+assemble - Assembles the outputs of this project.
+build - Assembles and tests this project.
+buildDependents - Assembles and tests this project and all projects that depend on it.
+buildNeeded - Assembles and tests this project and all projects it depends on.
+classes - Assembles main classes.
+clean - Deletes the build directory.
+jar - Assembles a jar archive containing the classes of the 'main' feature.
+testClasses - Assembles test classes.
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build.
+updateDaemonJvm - Generates or updates the Gradle Daemon JVM criteria.
+wrapper - Generates Gradle wrapper files.
+
+Distribution tasks
+------------------
+assembleDist - Assembles the main distributions
+distTar - Bundles the project as a distribution.
+distZip - Bundles the project as a distribution.
+installDist - Installs the project as a distribution as-is.
+
+Documentation tasks
+-------------------
+javadoc - Generates Javadoc API documentation for the 'main' feature.
+
+Help tasks
+----------
+artifactTransforms - Displays the Artifact Transforms that can be executed in root project 'Gradle-SampleApp'.
+buildEnvironment - Displays all buildscript dependencies declared in root project 'Gradle-SampleApp'.
+dependencies - Displays all dependencies declared in root project 'Gradle-SampleApp'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'Gradle-SampleApp'.
+help - Displays a help message.
+javaToolchains - Displays the detected java toolchains.
+outgoingVariants - Displays the outgoing variants of root project 'Gradle-SampleApp'.
+projects - Displays the sub-projects of root project 'Gradle-SampleApp'.
+properties - Displays the properties of root project 'Gradle-SampleApp'.
+resolvableConfigurations - Displays the configurations that can be resolved in root project 'Gradle-SampleApp'.
+tasks - Displays the tasks runnable from root project 'Gradle-SampleApp' (some of the displayed tasks may belong to subprojects).
+
+Verification tasks
+------------------
+check - Runs all checks.
+test - Runs the test suite.
+
+To see all tasks and more detail, run gradle tasks --all
+
+To see more detail about a task, run gradle help --task <task>
+
+BUILD SUCCESSFUL in 8s
+1 actionable task: 1 executed
+Configuration cache entry stored.
+ashwinkumard@ashwinkumards-Mac-mini Gradle-SampleApp % gradle run
+Calculating task graph as no cached configuration is available for tasks: run
+
+> Task :app:run
+Hello World!
+
+BUILD SUCCESSFUL in 6s
+2 actionable tasks: 2 executed
+Configuration cache entry stored.
+ashwinkumard@ashwinkumards-Mac-mini Gradle-SampleApp % 
+
+
+
+
