@@ -1,5 +1,5 @@
 ## Maven
-### Maven is build tool and management tool, madependency manager
+### Maven is build tool and management tool, dependency manager
 ### Manages dependencies and automates the build process
 
 ### Maven is a free and open-source build automation tool developed by the Apache Software Foundation.

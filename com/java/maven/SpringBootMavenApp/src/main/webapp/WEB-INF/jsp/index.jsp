@@ -1,22 +1,23 @@
-<%@ page language="java"
-    contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Spring Boot JSP Application</title>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html>
 
-    <h1>Welcome to Spring Boot!</h1>
+    <head>
+        <meta charset="UTF-8">
+        <title>Spring Boot JSP Application</title>
+    </head>
 
-    <h2>JSP page is working successfully.</h2>
+    <body>
 
-    <p>Application: SpringBootMavenApp</p>
+        <h1>We      lcome to Spring Boot!</h1>
 
-    <p>Server Port: 8484</p>
+        <h2>JSP page is working successfully.</h2>
 
-</body>
-</html>
+        <p>Application: SpringBootMavenApp</p>
+
+        <p>Server Port: 8484</p>
+
+    </body>
+
+    </html>
