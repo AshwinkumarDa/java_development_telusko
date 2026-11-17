@@ -4,6 +4,7 @@ public class i10 extends Car {
     public int publicSpeed = 10;
     
     public void setValues() {
+        this.protectedSpeed = "5";
         
     }
 
