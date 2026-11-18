@@ -1,3 +1,4 @@
+package SearchingSorting;
 public class QuickSort {
 
     // 1. divide and conquer

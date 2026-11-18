@@ -1,3 +1,4 @@
+package SearchingSorting;
 public class MergeSort {
     // Divide and Conquer
     

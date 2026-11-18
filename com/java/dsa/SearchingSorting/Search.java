@@ -1,3 +1,4 @@
+package SearchingSorting;
 public class Search {
     public static void main(String[] args) {
         int nums[] = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91};

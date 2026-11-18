@@ -1,3 +1,4 @@
+package SearchingSorting;
 public class InsertionSort {
     public static void main(String[] args) {
         int arr[] = {5,6,7,2,1};
