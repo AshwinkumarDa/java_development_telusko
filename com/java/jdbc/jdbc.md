@@ -9,6 +9,11 @@
    3. Navigate to **Build Path** $\rightarrow$ **Configure Build Path**.
    4. Select **Java Build Path** from the left menu, switch to the **Libraries** tab, and click **Add External JARs...**.
    5. Select and add the downloaded JAR file.
+   6. Apply
+   7. From Left side menu items, Click on *Deployment Assembly*
+   8. Click on *Add* button located at right side.
+   9. Select *Java Build Path Entries* and click on *Next* then click on *Finish*.
+   10. Click on *Apply and Close*
 3. **Load and register the Driver**
 4. **Establish the Connection**
 5. **Create the Statement**

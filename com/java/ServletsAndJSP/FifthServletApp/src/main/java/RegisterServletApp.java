@@ -6,7 +6,6 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
  * Servlet implementation class RegisterServletApp
@@ -43,7 +42,7 @@ public class RegisterServletApp extends HttpServlet {
 		System.out.println("Name: " + name + ", City: " + city);
 		
 		
-		PrintWriter writer = response.getWriter();
+		// PrintWriter writer = response.getWriter();
 		
 		response.sendRedirect("/FifthServletApp/Success.jsp");
 		
