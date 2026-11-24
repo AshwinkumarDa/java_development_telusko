@@ -3,7 +3,6 @@ package com.telusko.jdbclearning;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.Scanner;
 
 public class LaunchBatch {
 	public static void main(String[] args) {
@@ -12,7 +11,6 @@ public class LaunchBatch {
 		PreparedStatement preparedStatement = null;
 		
 		final String SQL_UPDATE_AGE = "UPDATE studentInfo SET sage=? WHERE id=?";
-		
 		
 		try {
 			connection = JdbcUtil.getConnection();
@@ -44,7 +42,6 @@ public class LaunchBatch {
 			
 			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();

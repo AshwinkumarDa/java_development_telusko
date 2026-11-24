@@ -4,16 +4,21 @@ import java.sql.*;
 
 public class Launchapp4 {
 
+	private static String getValueForKeyFromOS(String key) {
+		return System.getenv(key);
+	}
+	
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		// Load and Register the Driver
 		// instantiate/load Driver class.
 		Class.forName("com.mysql.cj.jdbc.Driver");
 
 		// Establish the connection
-		String url = "jdbc:mysql://localhost:3306/jdbclearning";
-		String user = "root";
-		String password = "ashwin@123";
-		Connection connection = DriverManager.getConnection(url, user, password);
+		String url = "jdbc:mysql://localhost:3306/telusko_db";
+		String userName = getValueForKeyFromOS("DB_USER_TELUSKO");
+		String password = getValueForKeyFromOS("DB_PASSWORD_TELUSKO");
+		
+		Connection connection = DriverManager.getConnection(url, userName, password);
 
 
 		// creating statement

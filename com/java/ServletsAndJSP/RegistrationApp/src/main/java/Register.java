@@ -20,6 +20,10 @@ public class Register extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 
+	private static String getValueForKeyFromOS(String key) {
+		return System.getenv(key);
+	}
+	
 	/**
 	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -37,12 +41,13 @@ public class Register extends HttpServlet {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			String dbUrl = "jdbc:mysql://localhost:3306/telusko_db";
-			String dbUser = "root";
-			String dbPassword = "ashwin@123";
+			// Establish the connection
+			String url = "jdbc:mysql://localhost:3306/telusko_db";
+			String userName = getValueForKeyFromOS("DB_USER_TELUSKO");
+			String password = getValueForKeyFromOS("DB_PASSWORD_TELUSKO");
 			
-			connect = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
-			
+			connect = DriverManager.getConnection(url, userName, password);
+						
 			prepStmt = connect.prepareStatement("INSERT INTO personal_info (pi_name, pi_email, pi_password, pi_city) VALUES (?, ?, ?, ?)");
 			
 			prepStmt.setString(1, piName);

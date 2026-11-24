@@ -3,6 +3,7 @@
 
 # Log file
 *.log
+logs/
 
 # BlueJ files
 *.ctxt
@@ -50,14 +51,22 @@ gradle-app.setting
 *.ipr
 out/
 
-# Eclipse
+# Eclipse & Server Configurations
 .metadata/
 .settings/
 .classpath
 .project
+*.launch
+Servers/
 *.swp
 *.tmp
+*.bak
 local.properties
 
 # Visual Studio Code
 .vscode/
+
+# Ignore all dot-files and dot-directories (e.g., .env, .DS_Store)
+.*
+# Exception: Keep .gitignore tracked
+!.gitignore

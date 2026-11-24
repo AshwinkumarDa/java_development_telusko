@@ -12,7 +12,6 @@ public class LaunchBatch {
 		
 		final String SQL_UPDATE_AGE = "UPDATE studentInfo SET sage=? WHERE id=?";
 		
-		
 		try {
 			connection = JdbcUtil.getConnection();
 			
@@ -43,7 +42,6 @@ public class LaunchBatch {
 			
 			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();

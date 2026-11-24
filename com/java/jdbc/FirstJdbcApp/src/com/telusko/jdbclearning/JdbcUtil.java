@@ -17,13 +17,18 @@ public class JdbcUtil {
 		}
 	}
 
-	public static Connection getConnection() throws SQLException {
-		// Establish the connection
-		String url = "jdbc:mysql://localhost:3306/jdbclearning";
-		String user = "root";
-		String password = "ashwin@123";
-		return DriverManager.getConnection(url, user, password);
+	private static String getValueForKeyFromOS(String key) {
+		return System.getenv(key);
 	}
+	
+	public static Connection getConnection() throws SQLException {
+		String url = "jdbc:mysql://localhost:3306/telusko_db";
+		String userName = JdbcUtil.getValueForKeyFromOS("DB_USER_TELUSKO");
+		String password = JdbcUtil.getValueForKeyFromOS("DB_PASSWORD_TELUSKO");
+				
+		return DriverManager.getConnection(url, userName, password);
+	}
+	
 	
 	public static void closeConnection(Connection connection, Statement statement) throws SQLException {
 		statement.close();

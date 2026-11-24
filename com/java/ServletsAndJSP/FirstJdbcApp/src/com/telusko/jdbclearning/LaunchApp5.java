@@ -4,6 +4,10 @@ import java.sql.*;
 
 public class LaunchApp5 {
 
+	private static String getValueForKeyFromOS(String key) {
+		return System.getenv(key);
+	}
+	
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		final String SQL_UPDATE = "UPDATE studentInfo set sage = 16 where id = 1";
 		// final String SQL_SELECT = "SELECT * FROM studentInfo";
@@ -13,10 +17,11 @@ public class LaunchApp5 {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 
 		// Establish the connection
-		String url = "jdbc:mysql://localhost:3306/jdbclearning";
-		String user = "root";
-		String password = "ashwin@123";
-		Connection connection = DriverManager.getConnection(url, user, password);
+		String url = "jdbc:mysql://localhost:3306/telusko_db";
+		String userName = getValueForKeyFromOS("DB_USER_TELUSKO");
+		String password = getValueForKeyFromOS("DB_PASSWORD_TELUSKO");
+		
+		Connection connection = DriverManager.getConnection(url, userName, password);
 
 
 		// creating statement
