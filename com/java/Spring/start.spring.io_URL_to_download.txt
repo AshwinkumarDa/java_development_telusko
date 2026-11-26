@@ -1,0 +1,1 @@
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=4.2.0&packaging=jar&configurationFileFormat=properties&jvmVersion=25&groupId=com.ashwinkumard&artifactId=DemoApp&packageName=com.ashwinkumard.DemoApp&dependencies=web
