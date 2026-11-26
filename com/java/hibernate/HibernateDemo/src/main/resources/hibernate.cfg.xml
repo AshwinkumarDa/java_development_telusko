@@ -1,0 +1,20 @@
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <!--  WE CAN READ BELOW COMMENTED VALUES FROM ENVIRONMENT. PLEASE SEE `HibernateUtil.java` file. -->
+        <!-- Database URL -->
+        <!-- <property name="hibernate.connection.url">DATABASE_URL</property> -->
+        <!-- Database User name -->
+        <!-- <property name="hibernate.connection.username">DATABASE_USER</property> -->
+        <!-- Database Password -->
+        <!-- <property name="hibernate.connection.password">DATABASE_PASSWORD</property> -->
+
+        <!--  Database Operation name one between below
+            1. create - it will create table if not exist and replace table if exists.
+            2. update - it will update create table
+        -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!--  It will show sql queries statements in console logs ran by hibernate.-->
+        <property name="hibernate.show_sql">true</property>
+    </session-factory>
+</hibernate-configuration>
