@@ -11,7 +11,6 @@ public class Laptop implements IComputer {
         System.out.println("Laptop compiled");
     }
 
-    @Override
     public String toString() {
         return "Laptop{" +
                 "name='" + name + '\'' +

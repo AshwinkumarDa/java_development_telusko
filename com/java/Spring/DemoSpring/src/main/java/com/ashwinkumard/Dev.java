@@ -64,7 +64,6 @@ public class Dev {
         // laptop.compile();
      }
 
-//    @Override
 //    public String toString() {
 //        return "Dev{" +
 //                "laptop=" + laptop +
@@ -72,7 +71,6 @@ public class Dev {
 //    }
 
 
-    @Override
     public String toString() {
         return "Dev{" +
                 "computer=" + IComputer +

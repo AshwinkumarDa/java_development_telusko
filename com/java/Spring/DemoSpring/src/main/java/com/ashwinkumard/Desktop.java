@@ -11,7 +11,6 @@ public class Desktop implements IComputer {
         System.out.println("Desktop compiled");
     }
 
-    @Override
     public String toString() {
         return "Desktop{" +
                 "name='" + name + '\'' +
