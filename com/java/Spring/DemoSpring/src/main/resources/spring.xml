@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<!--    <bean id="dev"  class="com.ashwinkumard.Dev" autowire="byName">-->
+    <bean id="dev"  class="com.ashwinkumard.Dev" autowire="byType">
+<!--        <property name="myLaptop" ref="newLaptop"/>-->
+
+<!--        <property name="IComputer" ref="newDesktop"/>-->
+
+        <!-- Setter Injection
+       <property name="age" value="12"/>
+       -->
+        <!--    Constructor Injection     -->
+<!--        <constructor-arg value="14" />-->
+<!--        <constructor-arg name="age" value="14" />-->
+
+<!--        <constructor-arg index="0" value="14"/>-->
+<!--        <constructor-arg index="1" value="300"/>-->
+
+        <!-- Constructor Injection for Reference Types  - Use name in `ref` tag as per below bean tag to get newLaptop reference here in Dev class laptop property -->
+<!--        <property name="laptop" ref="newLaptop"/>-->
+
+    </bean>
+
+    <!-- Use with bean id class autowire="byName" with byName we need to keep instance variable names same
+     here In Dev class we need to keep name `IComputer`here as well set `IComputer`
+     -->
+    <!-- in case of confusion - here Laptop and Desktop conforms to IComputer, so add primary tag with true here.  -->
+
+    <bean id="newDesktop" class="com.ashwinkumard.Desktop" primary="true">
+
+    </bean>
+    <bean id="newLaptop" class="com.ashwinkumard.Laptop">
+    </bean>
+
+</beans>
+
